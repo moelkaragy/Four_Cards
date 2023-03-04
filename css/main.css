@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 30px;
+}
+.container .head {
+    text-align: center;
+    font-size: 28px;
+}
+@media (max-width: 767px) {
+    .container .head {
+        font-size: 25px;
+    }
+}
+.container .head .add {
+    color: #777;
+    font-weight: 300;
+}
+.container .head span {
+    font-weight: bold;
+}
+.container .des {
+    margin: 20px auto;
+    max-width: 400px;
+    color: #777;
+    font-size: 11px;
+    text-align: center;
+    padding-bottom: 50px;
+}
+@media (max-width: 767px) {
+    .container .des {
+        font-size: 18px;
+        max-width: 380px;
+    }
+}
+.container .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+.container .flex-col {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.container .box {
+    box-shadow: 0 0 10px rgb(0 0 0 / 20%);
+    padding: 30px;
+    border-radius: 6px;
+    position: relative;
+    border-top: 4px solid;
+}
+@media (max-width: 767px) {
+    .container .cards {
+        grid-template-columns: 1fr;
+        
+    }
+}
+.container .box h4 {
+    margin-bottom: 10px;
+}
+.container .box p {
+    color: #777;
+    display: block;
+    padding-bottom: 130px;
+}
+.container .box svg {
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+}
+.container .one {
+    border-color: hsl(180, 62%, 55%);
+    align-self: center;
+}
+.container .two {
+    border-color: hsl(0, 78%, 62%);
+}
+.container .three {
+    border-color: hsl(34, 97%, 64%);
+}
+.container .four {
+    border-color: hsl(212, 86%, 64%);
+    align-self: center;
+}
